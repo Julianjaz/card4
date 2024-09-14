@@ -210,6 +210,13 @@
       /* border: 1px solid black; Para visualizar el contenedor */
     }
 
+    .contenedor2 {
+      width: 100%;
+      max-width: 40vh; /* Puedes ajustar este valor si quieres limitar el ancho máximo */
+      margin: 0 auto; /* Centra el contenedor horizontalmente */
+      padding: 20px;
+    }
+
     .frase {
       font-size: 24px;
       margin-bottom: 20px;
@@ -445,9 +452,58 @@
       font-size: 15px;
     }
 
+    .p-text4{
+      width: 100%; /* El párrafo ocupa todo el ancho del contenedor */
+      margin: 0;
+      font-size: 24px;
+    }
+
     .confirmacion{
       margin-top: -10px;
     }
+
+    .papas {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        width: 48%;
+    }
+
+    .column div {
+            font-size: 5vw; /* Cambia el tamaño del texto aquí */
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 90%;
+        }
+
+
+    .container-bottoms {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+        }
+    .column-bottom {
+      width: 48%; /* Cada botón ocupa el 48% del ancho del contenedor */
+      display: flex;
+      justify-content: center;
+    }
+
+    .column-bottom button {
+        font-size: 4vw; /* Ajusta el tamaño del texto del botón según el ancho de la pantalla */
+        padding: 10px;
+        width: 100%;
+    }
+
   </style>
 </head>
 <body>
@@ -466,6 +522,23 @@
         </div>
 
         <div id="tarjeta">
+
+          <h3>Con la bendicicon de nuestros padres</h3>
+          <div class="papas" style="width: 40vh">
+            
+            <div class="column">
+                <p style="font-size: 10px;">Padres de la novia</p>
+                <div>Efrén Felipe Zuluaga Ángel</div>
+                <div>Dalia Nury Alvarez Arboleda</div>
+            </div>
+            <div class="column" >
+                <p style="font-size: 10px;">Padres del novio</p>
+                <div>Luis Atehortua Velasquez</div>
+                <div>Miriam Zapata Garcia</div>
+            </div>
+        </div>
+
+        <br>
 
           <div class="contenedor">
             <div class="frase"> 
@@ -514,11 +587,9 @@
             </div>
           </div> -->
 
-          <div class="contenedor">
-            <div class="frase"> 
-              <p class="p-text"> Empieza la cuenta regresiva para este gran día
+          <div class="contenedor2">
+              <p class="p-text4" style="width: 40vh;"> Empieza la cuenta regresiva para este gran día
               </p>
-            </div>
           </div>
 
           <!-- hay un bug con esto y no se puede borrar -->
@@ -600,45 +671,48 @@
         <!-- <h1>Fecha</h1> -->
         <h3>08 de febrero del 2025</h3>
 
+
+        <h1>Ceremonia</h1>
+        <div class="contenedor-padre">
+          <div class="fecha">
+            <p>Parroquia la Purísima Concepción</p>
+            <!-- <p class="separador"></p> -->
+            <!-- <p id="separadores"> | </p> -->
+            <img src="img/machete.png" alt="" id="img-machete">
+            <p id="hora">3:00</p>
+            <p id="hora">p.m</p>
+            <!-- <p id="separadores"> | </p> -->
+            <!-- <p class="separador"></p> -->
+            <img src="img/machete.png" alt="" id="img-machete">
+            <button id="boton-ubicacion" onclick="window.location.href='https://www.google.com/maps/place/La+Pur%C3%ADsima+Concepci%C3%B3n+Envigado/@6.1672578,-75.5636779,17z/data=!3m1!4b1!4m6!3m5!1s0x8e46836af80f7671:0xfa0f9dcaece25bd!8m2!3d6.1672525!4d-75.561103!16s%2Fg%2F11s0vmmzdh?hl=es&entry=ttu'">VER</button>
+          </div>
+        </div>
+
+        <br>
+        <h1>Recepción</h1>
+        <div class="contenedor-padre">
+          <div class="fecha">
+            <p>Hotel Boutique Villa de los Angeles</p>
+            <!-- <p class="separador"></p> -->
+            <!-- <p id="separadores"> | </p> -->
+            <img src="img/machete.png" alt="" id="img-machete">
+            <p id="hora">5:30</p>
+            <p id="hora">p.m</p>
+            <!-- <p id="separadores"> | </p> -->
+            <!-- <p class="separador"></p> -->
+            <img src="img/machete.png" alt="" id="img-machete">
+            <button id="boton-ubicacion" onclick="window.location.href='https://www.google.com/maps/place/Hotel+Boutique+Villa+De+Los+Angeles/@6.1795488,-75.5523234,17z/data=!3m1!4b1!4m9!3m8!1s0x8e4682c26b2d56ad:0x5d6c5f316a2dc050!5m2!4m1!1i2!8m2!3d6.1795435!4d-75.5497485!16s%2Fg%2F11b6dqns1p?hl=es&entry=ttu'">VER</button>
+          </div>
+        </div>
+
+        <h1>Mapa</h1>
+        <img src="img/rutaw.jpeg">
+
           <h1>El gran dia</h1>
             <img src="img/itinerariow.jpeg">
-            <h1>Mapa</h1>
-            <img src="img/rutaw.jpeg">
 
 
-            <h1>Ceremonia</h1>
-            <div class="contenedor-padre">
-              <div class="fecha">
-                <p>Parroquia la Purísima Concepción</p>
-                <!-- <p class="separador"></p> -->
-                <!-- <p id="separadores"> | </p> -->
-                <img src="img/machete.png" alt="" id="img-machete">
-                <p id="hora">3:00</p>
-                <p id="hora">p.m</p>
-                <!-- <p id="separadores"> | </p> -->
-                <!-- <p class="separador"></p> -->
-                <img src="img/machete.png" alt="" id="img-machete">
-                <button id="boton-ubicacion" onclick="window.location.href='https://www.google.com/maps/place/La+Pur%C3%ADsima+Concepci%C3%B3n+Envigado/@6.1672578,-75.5636779,17z/data=!3m1!4b1!4m6!3m5!1s0x8e46836af80f7671:0xfa0f9dcaece25bd!8m2!3d6.1672525!4d-75.561103!16s%2Fg%2F11s0vmmzdh?hl=es&entry=ttu'">VER</button>
-              </div>
-            </div>
- 
 
-            <br>
-            <h1>Recepción</h1>
-            <div class="contenedor-padre">
-              <div class="fecha">
-                <p>Hotel Boutique Villa de los Angeles</p>
-                <!-- <p class="separador"></p> -->
-                <!-- <p id="separadores"> | </p> -->
-                <img src="img/machete.png" alt="" id="img-machete">
-                <p id="hora">5:30</p>
-                <p id="hora">p.m</p>
-                <!-- <p id="separadores"> | </p> -->
-                <!-- <p class="separador"></p> -->
-                <img src="img/machete.png" alt="" id="img-machete">
-                <button id="boton-ubicacion" onclick="window.location.href='https://www.google.com/maps/place/Hotel+Boutique+Villa+De+Los+Angeles/@6.1795488,-75.5523234,17z/data=!3m1!4b1!4m9!3m8!1s0x8e4682c26b2d56ad:0x5d6c5f316a2dc050!5m2!4m1!1i2!8m2!3d6.1795435!4d-75.5497485!16s%2Fg%2F11b6dqns1p?hl=es&entry=ttu'">VER</button>
-              </div>
-            </div>
            
             <br>
             <h1 class="codigo-vestuario">Código de vestuario</h1>
@@ -668,10 +742,10 @@
             </div>
           </div>
 
-            <br>
+            <!-- <br>
             <h1 class="confirmacion">Confirma tu asistencia</h1>
             <div id="asistencias">
-            <button id="boton-confirmar" onclick="window.location.href='https://api.whatsapp.com/send?phone=3218818944&text=%C2%A1Hola!%20%F0%9F%92%92%F0%9F%91%B0%F0%9F%8F%BC%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%92%8D%F0%9F%A4%B5%F0%9F%8F%BB%0ANos%20encantar%C3%ADa%20contar%20con%20su%20presencia%20en%20nuestra%20boda%2C%20por%20lo%20que%20tenemos%20dos%20%282%29%20cupos%20asignados%20para%20ustedes.%0APor%20favor%2C%20confirmar%20su%20asistencia%20antes%20del%202025%2F01%2F10%20para%20reservar%20su%20lugar.%20De%20no%20recibir%20confirmaci%C3%B3n%2C%20entenderemos%20que%20no%20podr%C3%A1s%20acompa%C3%B1arnos.%0A*Nombre%201*%3A%0A*Nombre%202*%3A%0A%C2%A1Esperamos%20verlos%20y%20celebrar%20juntos%20este%20d%C3%ADa%20tan%20especial%21%0ACon%20cari%C3%B1o%2C%20C%26J'">CONFIRMAR AQUI</button>
+            <button id="boton-confirmar" onclick="window.location.href='https://api.whatsapp.com/send?phone=3218818944&text=%C2%A1Hola!%20%F0%9F%92%92%F0%9F%91%B0%F0%9F%8F%BC%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%92%8D%F0%9F%A4%B5%F0%9F%8F%BB%0ANos%20encantar%C3%ADa%20contar%20con%20su%20presencia%20en%20nuestra%20boda%2C%20por%20lo%20que%20tenemos%20dos%20%282%29%20cupos%20asignados%20para%20ustedes.%0APor%20favor%2C%20confirmar%20su%20asistencia%20antes%20del%202025%2F01%2F08%20para%20reservar%20su%20lugar.%20De%20no%20recibir%20confirmaci%C3%B3n%2C%20entenderemos%20que%20no%20podr%C3%A1s%20acompa%C3%B1arnos.%0A*Nombre%201*%3A%0A*Nombre%202*%3A%0A%C2%A1Esperamos%20verlos%20y%20celebrar%20juntos%20este%20d%C3%ADa%20tan%20especial%21%0ACon%20cari%C3%B1o%2C%20C%26J'">CONFIRMAR AQUI</button>
             <p class="p-text3"> Por favor confírmanos tu asistencia antes del 8 de enero 2025.
             </p>
             <p class="p-text3">En caso de no confirmar entendemos que no pueden acompañarnos
@@ -684,8 +758,23 @@
           <h1 class="confirmacion">Agenda aqui el evento</h1>
           <div id="asistencias">
           <button id="boton-confirmar" onclick="window.location.href='https://calendar.app.google/xZU3t2CB6GV6PywF8'">AGENDAR</button>
+        </div> -->
+        <h1>Confirma tu asistencia</h1>
+        <div class="container-bottoms" style="width: 40vh">
+          <div class="column-bottom">
+              <button id="boton-confirmar" onclick="window.location.href='https://api.whatsapp.com/send?phone=3122377762&text=%C2%A1Hola!%20%F0%9F%92%92%F0%9F%91%B0%F0%9F%8F%BC%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%92%8D%F0%9F%A4%B5%F0%9F%8F%BB%0ANos%20encantar%C3%ADa%20contar%20con%20su%20presencia%20en%20nuestra%20boda%2C%20por%20lo%20que%20tenemos%20cuatro%20%284%29%20cupos%20asignados%20para%20ustedes.%0APor%20favor%2C%20confirmar%20su%20asistencia%20antes%20del%202025%2F01%2F08%20para%20reservar%20su%20lugar.%20De%20no%20recibir%20confirmaci%C3%B3n%2C%20entenderemos%20que%20no%20podr%C3%A1s%20acompa%C3%B1arnos.%0A*Nombre%201*%3A%0A*Nombre%202*%3A%0A%C2%A1Esperamos%20verlos%20y%20celebrar%20juntos%20este%20d%C3%ADa%20tan%20especial%21%0ACon%20cari%C3%B1o%2C%20C%26J'">CONFIRMAR AQUI
+              </button>
+          </div>
+          <div class="column-bottom">
+            <button id="boton-confirmar" onclick="window.location.href='https://calendar.app.google/xZU3t2CB6GV6PywF8'">AGENDAR
+            </button>
+          </div>
         </div>
-          
+        <p class="p-text3"> Por favor confírmanos tu asistencia antes del 8 de enero 2025.
+        </p>
+
+
+
         </div>
 
     </div>
